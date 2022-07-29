@@ -1,87 +1,289 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-   <title>Shopping Cart</title>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+    <!-- Fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
-   <link href="style.css" rel="stylesheet">
-</head>
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 
-<body>
-   <section>
-      <div class="container">
-         <div class="cart">
-            <div class="col-md-12 col-lg-10 mx-auto">
-               <div class="cart-item">
-                  <div class="row">
-                     <div class="col-md-7 center-item">
-                        <img src="images/product-1.png" alt="">
-                        <h5>iPhone 11 128GB Black</h5>
-                     </div>
+    <title>Influencer Gear</title>
+  </head>
+  <body>
+    <header></header>
 
-                     <div class="col-md-5 center-item">
-                        <div class="input-group number-spinner">
-                           <button onclick="calculator(false, 'phone', 60)" id="phone-minus" class="btn btn-default"><i
-                                 class="fas fa-minus"></i></button>
-                           <input id="phone-amount" type="text" class="form-control text-center" value="1">
-                           <button onclick="calculator(true, 'phone', 60)" id="phone-plus" class="btn btn-default"><i
-                                 class="fas fa-plus"></i></button>
-                        </div>
-                        <h5>$<span id="phone-price">60</span></h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
-                     </div>
-                  </div>
-               </div>
+    <main>
+      <section class="hero">
+        <div class="hero-contents">
+          <h1>Start your Journey as Influencer</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
+            vestibulum sed scelerisque eros. Lectus faucibus.
+          </p>
+          <button>
+            Preebook now <span><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+        </div>
 
-               <div class="cart-item">
-                  <div class="row">
-                     <div class="col-md-7 center-item mx-auto">
-                        <img src="images/product-2.png" alt="">
-                        <h5>iPhone 11 Silicone Case - Black</h5>
-                     </div>
-                     <div class="col-md-5 center-item">
-                        <div class="input-group number-spinner">
-                           <button onclick="calculator(false, 'case', 20)" id="case-minus" class="btn btn-default"><i
-                                 class="fas fa-minus"></i></button>
-                           <input id="case-amount" type="text" class="form-control text-center" value="1">
-                           <button onclick="calculator(true, 'case', 20)" id="case-plus" class="btn btn-default"><i
-                                 class="fas fa-plus"></i></button>
-                        </div>
-                        <h5>$<span id="case-price">20</span></h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
-                     </div>
-                  </div>
-               </div>
+        <div class="hero-img">
+          <img src="./images/main-camera.png" alt="" />
+        </div>
+      </section>
 
-               <div class="cart-item">
-                  <div class="row">
+      <!-- Brands section -->
+      <section class="brands">
+        <img src="./logos/Alibaba.svg" alt="" />
+        <img src="./logos/Amazon.svg" alt="" />
+        <img src="./logos/Daraz.pk Logo.svg" alt="" />
+        <img src="./logos/Ebay.svg" alt="" />
+        <img src="./logos/Rakuten.svg" alt="" />
+        <img src="./logos/Target.svg" alt="" />
+        <img src="./logos/Walmart.svg" alt="" />
+      </section>
 
-                     <div class="col-md-8">
-                        <h5>Subtotal: </h5>
-                        <h5>Tax:</h5>
-                        <h5>Total:</h5>
-                     </div>
+      <section class="collections">
+        <h2>Popular Collections</h2>
 
-                     <div class="col-md-4 status">
-                        <h5>$<span id="subtotal">80</span></h5>
-                        <h5>$<span id="tax">08</span></h5>
-                        <h5>$<span id="grand-total">88</span></h5>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-12 pt-4 pb-4">
-                  <button type="button" class="btn btn-success check-out">Check Out</button>
-               </div>
+        <div class="products">
+          <div class="product">
+            <img src="./images/action.png" alt="" />
+            <div class="product-info">
+              <div class="price">
+                <h4>$50.48</h4>
+                <button>Featured</button>
+              </div>
+              <h3 class="product-title">Flex Tripod</h3>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.50</span>
+              </p>
+              <button class="order-btn">
+                Order Now!<span><i class="fa-solid fa-bag-shopping"></i></span>
+              </button>
             </div>
-         </div>
-      </div>
-   </section>
+          </div>
 
-   <script src="main.js"></script>
-</body>
+          <div class="product">
+            <img src="./images/airpod.png" alt="" />
+            <div class="product-info">
+              <div class="price">
+                <h4>$50.48</h4>
+                <button>Featured</button>
+              </div>
+              <h3 class="product-title">Flex Tripod</h3>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.50</span>
+              </p>
+              <button class="order-btn">
+                Order Now!<span><i class="fa-solid fa-bag-shopping"></i></span>
+              </button>
+            </div>
+          </div>
 
+          <div class="product">
+            <img src="./images/camera.png" alt="" />
+            <div class="product-info">
+              <div class="price">
+                <h4>$50.48</h4>
+                <button>Featured</button>
+              </div>
+              <h3 class="product-title">Flex Tripod</h3>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.50</span>
+              </p>
+              <button class="order-btn">
+                Order Now!<span><i class="fa-solid fa-bag-shopping"></i></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./images/drone.png" alt="" />
+            <div class="product-info">
+              <div class="price">
+                <h4>$50.48</h4>
+                <button>Featured</button>
+              </div>
+              <h3 class="product-title">Flex Tripod</h3>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.50</span>
+              </p>
+              <button class="order-btn">
+                Order Now!<span><i class="fa-solid fa-bag-shopping"></i></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./images/tripod.png" alt="" />
+            <div class="product-info">
+              <div class="price">
+                <h4>$50.48</h4>
+                <button>Featured</button>
+              </div>
+              <h3 class="product-title">Flex Tripod</h3>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.50</span>
+              </p>
+              <button class="order-btn">
+                Order Now!<span><i class="fa-solid fa-bag-shopping"></i></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./images/lights.png" alt="" />
+            <div class="product-info">
+              <div class="price">
+                <h4>$50.48</h4>
+                <button>Featured</button>
+              </div>
+              <h3 class="product-title">Flex Tripod</h3>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.50</span>
+              </p>
+              <button class="order-btn">
+                Order Now!<span><i class="fa-solid fa-bag-shopping"></i></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./images/mic.png" alt="" />
+            <div class="product-info">
+              <div class="price">
+                <h4>$50.48</h4>
+                <button>Featured</button>
+              </div>
+              <h3 class="product-title">Flex Tripod</h3>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.50</span>
+              </p>
+              <button class="order-btn">
+                Order Now!<span><i class="fa-solid fa-bag-shopping"></i></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./images/setup.png" alt="" />
+            <div class="product-info">
+              <div class="price">
+                <h4>$50.48</h4>
+                <button>Featured</button>
+              </div>
+              <h3 class="product-title">Flex Tripod</h3>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.50</span>
+              </p>
+              <button class="order-btn">
+                Order Now!<span><i class="fa-solid fa-bag-shopping"></i></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="./images/single-light.png" alt="" />
+            <div class="product-info">
+              <div class="price">
+                <h4>$50.48</h4>
+                <button>Featured</button>
+              </div>
+              <h3 class="product-title">Flex Tripod</h3>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.50</span>
+              </p>
+              <button class="order-btn">
+                Order Now!<span><i class="fa-solid fa-bag-shopping"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="about">
+        <div class="about-img">
+          <img src="./images/gear.png" alt="" />
+        </div>
+
+        <div class="about-contents">
+          <h2>Featured products at one place</h2>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+            ullamco est sit aliqua dolor do amet
+          </p>
+          <button>
+            Join Now <span><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Influencer products</h3>
+      <p>Copyright © 2020 influencer products</p>
+      <p>All rights reserved</p>
+      <p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-pinterest"></i>
+      </p>
+    </footer>
+  </body>
 </html>

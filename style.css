@@ -1,64 +1,313 @@
-body {
-	background: #fff;
+/* Global styles */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
-.cart {
-	margin: 100px 0;
-	background-color: #F6F5FA;
-	;
-	padding: 60px 0;
+.hero {
+  display: flex;
+  height: 500px;
+  padding: 50px;
+  align-items: center;
 }
 
-.cart-item {
-	background-color: #fff;
-	border-radius: 10px;
-	padding: 15px 20px;
-	margin-bottom: 20px;
+.hero-contents {
+  width: 50%;
+  padding-left: 5%;
 }
 
-.center-item {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+.hero-contents h1 {
+  font-size: 55px;
 }
 
-.cart-item img {
-	width: 115px;
+.hero-contents p {
+  font-size: 18px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
-.cart-item h5 {
-	padding: 0 45px;
+.hero-contents button,
+.about .about-contents button {
+  background-color: rgb(3, 176, 220);
+  color: white;
+  padding: 2% 4%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
 }
 
-.cart-item .remove-item {
-	width: 25px !important;
+.hero-contents button i {
+  padding-left: 5px;
 }
 
-.btn-default {
-	background-color: #fff;
+.hero-img {
+  width: 50%;
+  background: url(./images/Circle\ design.svg) no-repeat center;
+  background-size: contain;
 }
 
-.cart-item .form-control {
-	background-color: #F6F5FA;
-	border: none;
-	width: 65px;
-	border-radius: 10px !important;
-	font-weight: 700;
-	font-size: 20px;
+.hero-img img {
+  width: 70%;
+  padding: 20px;
+  position: relative;
+  left: 16%;
 }
 
-.input-group {
-	width: unset;
+/* Brands section */
+.brands {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px auto;
+  width: 80%;
+  border-top: 1px solid rgb(214, 214, 214);
+  border-bottom: 1px solid rgb(214, 214, 214);
+  padding: 50px 0px;
 }
 
-.status {
-	text-align: right;
+/* Collections section */
+.collections {
+  padding: 40px;
+  width: 80%;
+  margin: 0px auto;
 }
 
-.check-out {
-	float: right;
-	padding: 10px 30px;
-	font-size: 19px;
-	background-color: #2FBE70;
-	border: none;
+.collections .products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 30px;
+}
+
+.collections .products .product {
+  width: 90%;
+  box-shadow: 0px 25px 50px -6px rgb(233, 233, 233);
+  margin-bottom: 30px;
+}
+
+.collections .products .product img {
+  width: 100%;
+  height: 180px;
+}
+
+.collections .products .product .product-info {
+  padding: 20px;
+}
+
+.collections .products .product .product-info i {
+  color: rgb(255, 204, 0);
+  font-size: 14px;
+}
+
+.collections .products .product .product-info .product-title {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.collections .products .product .product-info .order-btn {
+  margin-top: 17px;
+  margin-bottom: 17px;
+  background-color: rgb(3, 176, 220);
+  color: white;
+  padding: 4% 8%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+.collections .products .product .product-info .order-btn span i {
+  color: white;
+  padding-left: 5px;
+}
+
+.collections h2 {
+  text-align: center;
+  font-size: 34px;
+  padding: 20px;
+}
+
+.collections .product .price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collections .product .price button {
+  background-color: white;
+  color: rgb(3, 176, 220);
+  padding: 3% 6%;
+  border: 1px solid rgb(3, 176, 220);
+  outline: none;
+  border-radius: 50px;
+}
+
+/* About section */
+.about {
+  width: 75%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.about .about-img {
+  width: 45%;
+}
+
+.about .about-contents {
+  width: 55%;
+  padding-left: 20px;
+}
+
+.about .about-contents h2 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.about .about-contents p {
+  padding: 12px 40px 15px 0px;
+}
+
+/* Footer */
+footer {
+  height: 200px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+footer h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer p {
+  padding-top: 10px;
+}
+
+footer p i {
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 0px;
+  }
+
+  .hero-contents {
+    width: 100%;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .hero-contents h1 {
+    font-size: 25px;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .brands {
+    flex-wrap: wrap;
+    width: 100%;
+    border: none;
+  }
+
+  .brands img {
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .collections {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .collections .products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .collections .products .product {
+    width: 85%;
+    margin: 0px auto 30px;
+  }
+
+  .about {
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .about .about-img {
+    width: 100%;
+  }
+
+  .about .about-img img {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .about .about-contents {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .about .about-contents h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .about .about-contents p {
+    padding: 12px 0px 15px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .hero-contents h1 {
+    font-size: 35px;
+  }
+
+  .brands {
+    justify-content: space-around;
+    margin: 0px auto;
+    width: 100%;
+    border-top: 1px solid rgb(214, 214, 214);
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding: 50px 0px;
+  }
+
+  .brands img {
+    width: 70px;
+  }
+
+  .collections {
+    width: 100%;
+  }
+
+  .collections .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about {
+    width: 90%;
+  }
+
+  .about .about-img img {
+    width: 280px;
+  }
+
+  .about .about-contents h2 {
+    font-size: 24px;
+  }
 }
