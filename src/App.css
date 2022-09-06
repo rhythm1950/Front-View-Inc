@@ -46,7 +46,7 @@
 
 .hero-img {
   width: 50%;
-  background: url(./images/Circle\ design.svg) no-repeat center;
+  background: url(../public/images/Circle\ design.svg) no-repeat center;
   background-size: contain;
 }
 
